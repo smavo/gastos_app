@@ -13,7 +13,8 @@
 </div>
 <div class="row">
     <div class="col">
-        <form action="/expense_reports" method="POST">
+        <form action="/expense_reports" method="POST" >
+            @csrf
             <div class="form-group">
                 <br>
                 <label for="title">Title</label>

@@ -11,9 +11,9 @@
         <a href="/expense_reports/create" class="btn btn-primary">Create a New Reports</a>
     </div>
 </div>
+<br>
 <div class="row">
     <div class="col">
-
         <table class="table">
             @foreach($expenseReports as $expenseReport)
                 <tr>
