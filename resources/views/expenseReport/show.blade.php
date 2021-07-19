@@ -19,8 +19,8 @@
            @foreach ($report->expenses as $expense )
                <tr>
                    <td>{{$expense->descripcion}}</td>
-                   <td>{{$expense->created_at}}</td>
                    <td> S/. {{$expense->amount}}</td>
+                   <td>{{$expense->created_at}}</td>
                </tr>
            @endforeach
        </table>
