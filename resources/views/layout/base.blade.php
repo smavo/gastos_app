@@ -12,6 +12,7 @@
   </head>
   <body>
     <div class="container">
+        <br>
         @yield('content')
     </div>
 

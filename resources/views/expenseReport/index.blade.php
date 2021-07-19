@@ -8,7 +8,7 @@
 </div>
 <div class="row">
     <div class="col">
-        <a href="/expense_reports/create" class="btn btn-success">Create a New Reports</a>
+        <a href="/expense_reports/create" class="btn btn-secondary">Create a New Reports</a>
     </div>
 </div>
 <br>
@@ -17,9 +17,10 @@
         <table class="table">
             @foreach($expenseReports as $expenseReport)
                 <tr>
-                    <td>{{ $expenseReport->title }}</td>
-                    <td ><a href="/expense_reports/{{$expenseReport->id}}/edit" class="bnt btn-primary" style="border-radius: 10px; margin:10px; padding:10px;">Edit</a></td>
-                    <td ><a href="/expense_reports/{{$expenseReport->id}}/destroy" class="bnt btn-danger" style="border-radius: 10px; margin:10px; padding:10px;">Delete</a></td>
+                    <td ><a href="/expense_reports/{{$expenseReport->id}}"><b>{{ $expenseReport->title }}</b></a></td>
+                    <td ><a href="/expense_reports/{{$expenseReport->id}}" class="btn btn-success">View</a></td>
+                    <td ><a href="/expense_reports/{{$expenseReport->id}}/edit" class="btn btn-primary">Edit</a></td>
+                    <td ><a href="/expense_reports/{{$expenseReport->id}}/destroy" class="btn btn-danger">Delete</a></td>
                 </tr>
             @endforeach
         </table>
