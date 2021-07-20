@@ -19,6 +19,8 @@ App\Expense::first()->expenseReport;
 ## php artisan make:mail SummaryReport
 
 ## php artisan make:auth 
+composer require laravel/ui "^1.0" --dev
+php artisan ui vue --auth
 
 # Limpiar Cache
 php artisan cache:clear
