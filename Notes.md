@@ -19,10 +19,11 @@ App\Expense::first()->expenseReport;
 ## php artisan make:mail SummaryReport
 
 ## php artisan make:auth 
-composer require laravel/ui "^1.0" --dev
-php artisan ui vue --auth
+`composer require laravel/ui "^1.0" --dev`
+`php artisan ui vue --auth`
+`npm install && npm run dev `
 
 # Limpiar Cache
-php artisan cache:clear
-php artisan config:clear
-php artisan config:cache
+`php artisan cache:clear`
+`php artisan config:clear`
+`php artisan config:cache`
