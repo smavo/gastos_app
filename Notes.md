@@ -16,4 +16,11 @@ App\ExpenseReport::first();
 
 App\Expense::first()->expenseReport;
 
-## 
+## php artisan make:mail SummaryReport
+
+## php artisan make:auth 
+
+# Limpiar Cache
+php artisan cache:clear
+php artisan config:clear
+php artisan config:cache
